@@ -1,0 +1,231 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+<link rel="stylesheet" href="signupcss.css" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width-device-width, initial-scale=1">
+
+        <title>Lifestyle Support</title>
+        <link href="css/index.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.css" type="text/css"/>
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.css" type="text/css">
+<style>
+        body{
+    width:100%;
+    height: 100%;
+    margin: 0;
+
+}
+
+ a{
+    text-decoration: none;
+    background-color: transparent;
+    color:#ededed;
+
+}
+
+.header{
+    background-color:#000;
+    color:#fff;
+    border-color: #080808;
+    min-height: 60px;
+    border: 1px solid transparent;
+}
+
+.inner-header{
+    width:80%;
+    margin:auto;
+}
+
+.logo{
+    float: left;
+height: 50px;
+padding: 15px;
+font-size: 20px;
+font-weight: bold;
+
+}
+
+.header-link{
+    float:right;
+font-size:14px;
+height: 50px;
+padding: 15px 15px;
+font-size:16px;
+font-weight: bold;
+}
+
+nav{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.content{
+    min-height: 600px;
+}
+
+.banner-image{
+    padding-bottom: 50px;
+margin-bottom: 20px;
+text-align: center;
+color: #f8f8f8;
+background: url(http://www.abudhabiconfidential.ae/wp-content/uploads/sites/3/2015/04/Innovation-Themes-in-Abu-Dhabi-5.jpg) no-repeat center;
+background-size: cover;
+}
+
+.inner-banner-image{
+    padding-top: 12%;
+width:40%;
+margin:auto;
+}
+
+.banner_content{
+    position: relative;
+padding-top: 6%;
+padding-bottom: 6%;
+overflow:hidden;
+margin-bottom: 12%;
+background-color: rgba(0, 0, 0, 0.7);
+max-width: 660px;
+}
+
+.Button{
+    color: #fff;
+background-color: #c9302c;
+border-color: #ac2925;
+box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+padding: 10px 16px;
+font-size: 18px;
+border-radius: 6px;
+}
+
+.container{
+    width:90%;
+margin:auto;
+overflow:hidden;
+}
+
+.items{
+    width:30%;
+display: block;
+padding: 4px;
+margin-bottom: 20px;
+line-height: 1.42857143;
+background-color: #fff;
+border: 1px solid #ddd;
+border-radius: 4px;
+float:left;
+margin-left:1%;
+}
+
+.thumbnail{
+    display: block;
+max-width: 100%;
+height: auto;
+}
+
+.caption{
+    color:#000;
+padding:0px 10px 10px;
+font-weight: bold;
+text-align: center;
+}
+
+footer{
+    background-color: #000;
+    color:#fff;
+    font-size:14px;
+}
+
+li{
+    list-style-type: none;
+}
+
+</style>
+        <div class="header">
+            <div class="inner-header">
+                <div class="logo">
+                    <nav>
+                        <ul>
+                            <li type="none"><a href="{% url 'music:index' %}">LifeStyle Support</a></li>
+
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header-link">
+                    <nav>
+                        <ul>
+
+
+                             <li type="none"><a href="{% url 'music:login' %}">Login</a></li>
+
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header-link">
+                    <nav>
+                        <ul>
+                            <li type="none"><a href="{% url 'music:signup' %}">Sign Up</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+        </div>
+        <div class="content">
+            <div class="banner-image">
+                <div class="inner-banner-image">
+                    <div class="banner_content">
+                        <h1>We sell lifesytle</h1>
+                        <p>Flat 40% OFF on premium brands</p>
+                        <form>
+                            <a href = "discount.html" class="btn btn-danger" >Shop  Now</a>
+                            <!--<button class="btn btn-danger">Shop Now</button>-->
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="items">
+                    <a href="{% url 'music:shirt' %}">
+                        <img src="https://ae01.alicdn.com/kf/HTB1SDTJLXXXXXcwXXXXq6xXFXXXg/Men-Floral-Shirt-2016-New-Men-s-Fashion-Long-Sleeve-Men-Casual-Shirt-Tops-Thin-Men.jpg_640x640.jpg" alt="" class="thumbnail"/>
+                        <div class="caption">
+                            <h2>Shirts</h2>
+                            <p>Our exquiisite collection of shirts.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="items">
+                    <a href="{% url 'music:watch' %}">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRckHcuspZyzBR86tVsySrJDMQy4bnOxyxBJmZRh0atDviyJsr" alt="" class="thumbnail"/>
+                        <div class="caption">
+                            <h2>Watches</h2>
+                            <p>Original watches from best brands.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="items">
+                    <a href="{% url 'music:camera' %}">
+                        <img src="http://www.conrad.com/medias/global/ce/6000_6999/6200/6240/6243/1343681_ZB_00_FB.EPS_1000.jpg" alt="" class="thumbnail"/>
+                        <div class="caption">
+                            <h2>Cameras</h2>
+                            <p>Choose among the best in the world.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+                <p align="center">Copyright © Lifestyle Store. All Rights Reserved | Contact Us: +91 90000 00000</p>
+            </div>
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+
+

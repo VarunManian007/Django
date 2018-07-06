@@ -1,0 +1,16 @@
+footer{
+    padding: 10px 0;
+ background-color: #101010;
+ color:#9d9d9d;
+ bottom: 0;
+ width: 100%;
+}
+
+.row-style{
+    margin-top: 40px;
+}
+
+body{
+    align-content: center;
+    margin-left: 40%;
+}
